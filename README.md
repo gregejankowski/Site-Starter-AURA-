@@ -6,31 +6,28 @@ This package contains:
     This template provides a clean theme (minimal pages) using flexible layouts for all pages.
     Templates are selected when creating a new site or changing the Template. This will overwrite all site pages and the theme. 
 
-* **Site Starter (AURA) Theme**
-    Use to update an existing sites' header styles, hero, and branding.
+* **Builder Notes**
+    The site includes builder notes as an aide to help setup and configure the pages. These notes should be removed before publishing the site.
    
-* **Page Templates**
-    When creating a page or new page variation, some page templates are included. For non-object and non-CMS page types, a page layout called **Template** is included to get a new page started. 
+* **Page Template**
+    When creating or update a non-object and non-CMS page types, a page layout called **Template** is included to get a new page started. 
 
+
+## Installation and Setup
 
 **Notes:**
 1. **Read the instructions carefully** and complete the tasks before publishing. There are additional instructions and details 
 2. This package is **supplied as-is** and is not supported by Salesforce.
 3. No CMS or Knowledge content included.
 
-
-## New Site setup
+**Setup**
 
 1. Enable and setup Experience Cloud on your site.
-   Configure Knowledge and Salesforce CMS (as needed)
-
-2. Install the package - [Experience Cloud - Site Starter (AURA)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000iqvo) Spring '22 v1.8 (Template Only)
-    
-3. Open the **Digital Experiences** app and then open the **All Sites** tab.
-
-4. Click **New**
-
-5. Select **Site Starter (AURA)**
+2. Configure Knowledge and Salesforce CMS (as needed)
+3. Install the package - [Experience Cloud - Site Starter (AURA)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000irO6) Spring '22 v1.2
+4. Open the **Digital Experiences** app and then open the **All Sites** tab.
+5. Click **New**
+6. Select **Site Starter (AURA)**
 
 6. Add the site **Name** and site **URL** (optional)
 
@@ -38,7 +35,6 @@ This package contains:
 ## Site Configuration
 
 1. Go to Experience Builder and configure the themes’s color, images, font, and theme settings.
-    
 2. Update the Site CSS Experience Builder / Theme / Edit CSS (from the pull-down menu). 
    Copy the CSS from [CSS-Site-Starter-CSS.css](./CSS-Site-Starter.css) and paste it into the sites’ CSS.
     
