@@ -28,37 +28,78 @@ This package contains:
    [Experience Cloud - Site Starter (AURA)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000irO6) Spring '22 v1.2
 
 **Create a New Site**
+
 1. Open the **Digital Experiences** app and then open the **All Sites** tab.
 2. Click **New**.
 3. Select **Site Starter (AURA)**.
 4. Add the site **Name** and site **URL** (optional).
-5. Complete the configuration steps.
+5. Complete the site configuration steps.
 
+*Note*: Creating a new site in larger orgs can take a long time, and may timeout. A workaround for this is to create a new site with the desired name, select the BYO (AURA) templace. Once created, go to Workspace / Administration / Settings / Change Template.  
+*Warning* - This will completely overwrite the site, only use this method when creating a new site.
+
+**Update an Existing Site**
+
+The package also allows for updating an existing site for theme, page templates, and CSS.
+
+1. To use the same Theme Layouts (e.g., Help Center, Search, Login Wide) as Site Starter (AURA) open your site and change the Theme Layout within Experience Builder under Settings / Theme / Change Theme. Your original theme is still available.
+2. Complete the site configuration steps
 
 ## Site Configuration
 
-1. Go to Experience Builder and configure the themes’s color, images, font, and theme settings.
-2. Update the Site CSS Experience Builder / Theme / Edit CSS (from the pull-down menu). 
-   Copy the CSS from [CSS-Site-Starter-CSS.css](./CSS-Site-Starter.css) and paste it into the sites’ CSS.
-    
-    **Note**: 
-    - CSS can change from release to release and potential can visually impact other components within the Experience Cloud site. 
-    - The site CSS is reviewed for each release, but is **supplied as-is**.
-    
-3. Add to the site’s Head Markup (Experience Builder / Settings / Advanced / Edit Head Markup).
-   Copy the Head Markup from [Head-Markup.html](./Head-Markup-Site-Starter.html) and paste it into the sites’ Head Markup.
-    
-4. Allow for the use of Font Awesome icons, add ht&#8203;tp://cdnjs.cloudflare.com to **Setup** / **CSP Trusted Site Definition**, and check **Allow** for font-src and style-src.
+1. Update the sites' Head Markup (Experience Builder / Settings / Advanced / Edit Head Markup) from [Head-Markup.html](./Head-Markup-Site-Starter.html) and paste it into the sites’ Head Markup.
+2. Review the Head Markup and update the site markup and allow (optionally) for icon use. 
+    1. To add a site favicon, upload a static resource, share it publicly, and update the file name in the head markup.
+    2. Allows for the use of Font Awesome icons in HTML components (examples; info boxes, builder notes, section headings with tooltips, etc.). 
+        Add *http://cdnjs.cloudflare.com* to *Setup* / *CSP Trusted Site Definition*, and *Allow for* font-src and style-src.
+    3. Three different CSS files are included as static resources and are referenced with the Head Markup:
+        - ExpCloudCSSBuilderComponents - CSS overrides to make Builder components styling more consistent.
+        - ExpCloudCSSFonts - CSS CSS related font and button styling.
+        - ExpCloudCSSforHTML - CSS used on HTML components within the site.
+    3. Complete site branding and the additional configuration and setup steps listed in the Instructions page of the site.
+    4. Configure Knowledge and Salesforce CMS (as needed).
+    5. Complete pages based on user journeys and provide content, links, and components where applicable.
 
 
-## Using Site Starter (AURA) Theme and Page Layouts on existing sites
+## Pages
 
-The package also allows for updating an existing site for theme, page templates, and CSS.
-1. To use the same Theme Layouts (e.g., Help Center, Search, Login Wide) as Site Starter (AURA) open your site and change the Theme Layout within Experience Builder under Settings / Theme / Change Theme. Your original theme is still availabel.
+The following pages have been included and updated in this theme. The theme can be used to update an existing site (Workspace / Administrator / Settings / Template, or create a new site. 
 
-2. To use page templates from Site Starter (AURA):
-    - New Non-Object Pages: Create a new page and select one of the page template. 
-    - Existing Pages: Rename the existing page variation, and create a new one with the original name selecting the cooresponding page layout. 
-      If the non-object or object pages do not show a cooresponding page layout, create a new page with a flexible layout. 
-    - Make the new page the default and original page can be deleted.    
+1. *Account Detail* - Flexible and improved layout.
+2. *Article Detail* - Flexible and improved layout. Uses CSS to hide all but the 1st section of the knowledge article page layout to hide unwanted fields.
+3. *Case Detail* - Flexible and improved layout.
+4. *Create Record* - Flexible and improved layout.
+5. *Contact Support* - Flexible layout.
+6. *Error* - Updated error page with improved message.
+7. *Groups* - Non-object page for displaying active and my groups lists.
+8. *Group Details* - Flexible and improved layout.
+9. *Home* - Flexible and improved layout. **
+10. *Instructions* - Builder tasks to complete before publishing your site.
+11. *Learning* - Add CSM, Trailhead, or tasks for onboarding.
+12. *Login* - Includes a new LoginWide theme layout and all loing related pages were update.
+    1. All login pages - Login, Check Password, Forgot Password, Login Error, and 
+13. *Messages* - Flexible and improved layout.
+14. *Page Template* - Used as a starting point when creating a new page or updating an existing page to a flexible layout. 
+    Note: After the page is creates, also change the page SEO title name. 
+15. *Question Detail* - Flexible and improved layout.
+16. *Search* - Add a new theme layout (Search) used to display a hero search.
+17. *Support* - Non-object page for displaying FAQs, and Cases.
+18. *Topic Catalog* - Titled the page Help Center, and added a theme layout Help Center to display a hero search.
+19. *Topic Detail* - Flexible and improved layout.
+20. *User Detail* - Flexible and improved layout.
+21. *User Settings* - Flexible and improved layout.
+
+Note: Review the layout and content for all pages listed. Address and remove all builder notes from pages before publishing.
+
+
+## Recommended Apps and Components 
+
+The following Salesforce Labs apps from the AppExchange that can help enhance your site experience:
+
+1. Launch Flow in Modal (https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FMYinUAH)
+2. Events Calendar for Experience Cloud - Salesforce Labs (https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3u00000ONzaqEAD)
+3. Knowledge Article Body Content for Experience Cloud (https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3u00000MBbGUEA1)
+4. Spring '21 Salesforce Community Management Package for Sites with Chatter (https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B5XHsEAN)
+5. Salesforce CRM Dashboards (https://appexchange.salesforce.com/appxListingDetail?listingId=a0N30000004g316EAA)
+
 
