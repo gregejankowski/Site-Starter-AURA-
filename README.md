@@ -50,7 +50,7 @@ This package contains:
 
 ## Site Configuration
 
-1. Update the sites' Head Markup (Experience Builder / Settings / Advanced / Edit Head Markup) from [Head-Markup.html](../Head-Markup-Site-Starter.html) and paste it into the sites’ Head Markup.
+1. Update the sites' Head Markup (Experience Builder / Settings / Advanced / Edit Head Markup) from [Head-Markup.html](../main/Head-Markup-Site-Starter.html) and paste it into the sites’ Head Markup.
 2. Review the Head Markup and update the site markup and allow (optionally) for icon use. 
     1. To add a site favicon, upload a static resource, share it publicly, and update the file name in the head markup.
     2. Allows for the use of Font Awesome icons in HTML components (examples; info boxes, builder notes, section headings with tooltips, etc.). 
