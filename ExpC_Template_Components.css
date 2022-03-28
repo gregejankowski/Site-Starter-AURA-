@@ -1,0 +1,167 @@
+/*  Experience Cloud Site Starter CSS - Builder Components Overrides
+    Latest Update: 3/24/21 */
+
+/* -------------- Card Formatting -------------- */
+/* --- Common CSS for background and border update to site components */
+.component-border,
+.selfServiceArticleLayout .content							/* Article Detail */,  
+.forceCommunityCmsContentItemDetailLayout                	/* CMS Connect Detail */,
+.forceChatterCompactFeed									/* Feed Compact */,
+.forceCommunityRecordListDesktop.slds-card					/* Group List */,
+.forceChatterGroupDetailCard								/* Group Detail - About */,
+.forceChatterAddMemberCard									/* Group Detail - Add Member */,
+.forceChatterMessageDetailView.container				    /* Messages */,
+.HealthCloudGAHcCommunityCareTeamList 						/* My Care Plans */,
+.HealthCloudGAHcCommunityTaskList						    /* My Tasks */,
+.forceCommunityUserProfileStats                          	/* My Profile */,
+.forceCommunityUserProfileHeaderDetail .cUserProfileCon,
+.forceCommunityUserRecognitions				  		        /* My Profile - Recognition Badges */,
+.slds-card.slds-card_boundary.forceCommunityUserRecognitions,
+.forceCommunityUserSettingsInternal                      	/* My Settings */,
+.forceCommunityUserRecognitions .userRecognitionsHeader 	/* Profile - My Badges */,
+.selfServiceSimilarArticles42 ul							/* Related Articles */,
+.forceCommunityLwcRecordDetail .slds-card                   /* Record Details */,
+.forceCommunityRecordListDesktop                         	/* Record List */,
+.forceRecordLayout.slds-page-header,
+.forceCommunityRecordListStandard.forceCommunityObjectHome,
+.forceChatterFeedInner				                    	/* Record feed */,
+.forceCommunityTopicCatalog                               	/* Topic Catelog */,
+.forceCommunityTopicDescription.slds-card-wrapper		   	/* Topic Description */,
+.forceCommunityTopicMetrics.slds-card-wrapper			   	/* Topic Metrics */,
+.forceChatterStyle--default.forceChatterFeedElementFullView .cuf-element /* Question detail */,
+.selfServiceTopicArticleList								/* Topic Details - Articles */, 
+.forceCommunitySearch .forceSearchResultsGridView .searchScroller        /* Search */
+{background-color:#ffffff !important; border-color:#d4d4d4 !important; border-radius:5px !important; border-style:solid !important; border-width:1px !important; padding:12px !important;}
+
+
+/* -------------- Standard component CSS overrides -------------- */
+
+/* --- Articles and Knowledge */
+/* 	Article Content - Make the content full-width */  
+.selfServiceArticleLayout.article-column {padding-left: 0px !important; padding-right: 0px !important; padding-bottom: 12px !important;}   
+/* 	Article Content - Title */
+.selfServiceArticleLayout .article-head, .selfServiceArticleLayout .breadcrumb {margin: 0px !important;}
+/* 	Article Content - Summary */
+.selfServiceArticleLayout .article-summary {margin-bottom: 18px !important; margin-top: 6px !important;}
+/*	Article Content - Hide the last updated date and term "Knowledge" */
+
+/* --- Hide article sections */
+/* 	Article Content - Hide the summary form the title section */
+.selfServiceArticleHeaderDetail .article-summary {display: none;}
+/* 	Article Content - Hide 2nd and 3rd sections of knowledge article page layout */
+.article-column .test-id__section:nth-of-type(2), .article-column .test-id__section:nth-of-type(3), .article-column .test-id__section:nth-of-type(4), .forcePageBlockItemView .tooltipIcon 
+{display: none !important;}
+
+/* 	Article Content - Section padding */
+.forcePageBlockItemView.forcePageBlockItem.slds-col>.slds-form-element.slds-form-element_readonly {padding-bottom: 12px !important;}
+/* 	Article Content - Section titles */
+.selfServiceArticleLayout .forcePageBlockSectionView.full .test-id__field-label, .selfServiceArticleLayout .forcePageBlockSectionView.full .test-id__grouped-field-label-icon {
+font-size: .8rem !important; font-weight: 400 !important; margin-bottom: 12px !important;}
+/* 	Article Content - Reset font size
+   NOTE: This is done to display a consistant font size without any unwanTed overrides. */
+.slds-rich-text-editor__textarea, .slds-rich-text-editor__output, 
+.selfServiceArticleLayout .forcePageBlockSectionView.full .test-id__field-value {font-size: initial !important;}
+/* 	Article Content - Case Deflection & Trending Articles */
+.selfServiceTopicTrendingArticles42 li>.comm-topic-trending-articles__item>a {
+background-color: white; border-color: #D4D4D4; border-style: solid; border-width: 1px; border-radius: 5px; margin-top:18px; padding: 12px;}
+/* 	Article Content - Related Articles */
+.selfServiceSimilarArticles42 li>.comm-related-articles__item>a {padding-bottom:12px !important; padding-top:12px !important; border-width: 0px;}
+.comm-related-articles__item .slds-p-bottom_medium {word-break: normal !important;} /* Fix the word break issue */
+.comm-related-articles__item {font-size: 1rem !important;}
+/* 	Article Content - Top Articles by Topic
+   This is setup for 3 topics, change to 50% for two topics per row */
+.forceCommunityTopArticleList .singleListContainer {padding-bottom: 0px !important; width: 33% !important}
+/* 	Article Content Mobile - Top Articles by Topic */
+@media only screen and (max-width: 480px) {.forceCommunityTopArticleList .singleListContainer {padding-bottom: 12px !important; width: 100% !important}}
+/* Topic Details FAQs section */
+.selfServiceBaseArticleList .article-list {margin-top:0px !important; margin-bottom:12px !important;}
+.selfServiceTopicArticleList .selfServiceArticleListItem {padding-top: 0px; padding-bottom: 24px;}
+/* --- End Articles and Knowledge --- */
+
+
+/* --- Contact Support - Case deflection */
+.slds-align_absolute-center.comm-deflection-tracking__buttons {padding-top:12px;}
+.slds-align_absolute-center.comm-deflection-tracking {margin-top:64px;}
+/* Contact Support - Support Form */
+.forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete, .forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete:focus {background: white !important;}
+
+/* -- Events calendar background */
+.fc.fc-ltr.fc-unthemed {background-color: white;}
+.noHeaderBorder[cccalendar-cceventDetails_cceventDetails] {padding-bottom: 0px;}
+
+/* --- Featured Topics */
+.forceTopicFeaturedTopics, .topicLabel {font-size:1.3rem !important; font-weight:400 !important;}
+.forceTopicFeaturedTopicItem.topicItem {padding:6px !important;}
+
+/* --- Feed Compact */
+.cuf-retryPanel.forceChatterCompactFeed {display:none;}
+
+/* --- Group Banner */
+.forceCommunityGroupHighlightStencilNapili.forceRecordLayout {background-color : #ffffff;}
+
+/* --- Group Details */
+.forceChatterOutputDescription .gxmorelink {display: none !important;}
+.forceChatterOutputInformationBody.gxmorelink {display: none !important;}
+.forceDetailPanelDesktop.slds-card {padding:0px !important;}
+
+/* --- Groups Tiles */
+.forceChatterGroupTileTemplate {border-color:#e8e8e8;  border-radius:5px; border-style:solid; border-width:1px; margin:6px; width:32%}
+/* Make the group list full width (non-mobile only) */
+@media only screen and (min-width: 768px)
+{.forceChatterObjectHomeTileView section {width:100% !important;}
+}
+
+/* --- Header */
+/* Remove the Home nav link (NOTE: comment out or delete to show the Home link) */
+.forceCommunityThemeNav .comm-navigation__top-level-item.mainNavItem:first-child,
+.horizontalMenuItemContainer[community_navigation-multiLevelNavigation_multiLevelNavigation]:first-child,
+.horizontalMenuItemContainer:first-child {padding-left: 0; display: none;}
+/* Menu Item font size */
+.horizontalMenuItem {font-size: 1rem !important;}  
+/* Make the User Profile Icon larger */
+.forceCommunityThemeProfileMenu .profile-icon {width: 40px !important; height: 40px !important;}
+.comm-user-profile-menu .slds-avatar {width: 40px !important; height: 40px ;}
+
+/* --- HERO */
+/* Title */
+.forceCommunityThemeHeroBase .contentTitle {font-size: 3rem !important; font-weight: 400 !important;}
+/* Caption */
+.forceCommunityThemeHeroBase .contentCaption {font-size: 1.2rem !important; font-weight: 400 !important;}
+
+
+/* --- Login - Form width to 100% */
+.salesforceIdentityLoginForm2 .inputBox {width: 90% !important;}
+
+/* --- Messaging start message at the top, not centered in the section */
+.forceChatterMessageDetailView .messageContent {justify-content: start !important;}
+
+/* --- My Setting hide top row */
+.forceCommunityUserSettingsCustomizable .row:first-child {display:none;}
+
+/* Record Banner */
+.forceHighlightsStencilDesktop .slds-page-header__detail-row {background-color:rgba(255,255,255,0) !important}
+
+/* --- Record List component reset title */
+.forceCommunityRecordListStandard .listTitle {text-transform: revert !important;}
+
+/* --- Search Results */
+/* Dicussion results background */
+.forceCommunitySearch .compactFeed.forceChatterCompactFeed {background-color : #ffffff !important;} 
+/* Search results text size above filters */    
+.forceSearchScopesList.scrollerWrapper>.slds-nav-vertical__title {display:none;}
+
+/* --- Tabs */
+.tabHeader {font-size: 1.2rem !important;}
+.forceCommunityTabset {background-color: rgba(255,255,255,0) ; min-height: 282px;}
+.uiTabset—default .tabs__nav {border-bottom-width: 0px;}
+
+/* --- Tile Menu font size */
+.comm-tile-menu__item-title {font-size:1.6rem !important;}
+
+/* --- Topic Catelog */
+.forceCommunityTopicCatalog .topicHierarchy-topBox {border-width: 0px !important; margin-left:12px;}
+.forceCommunityTopicCatalog .topicHierarchy-top {font-weight: 400 !important;}
+
+/* --- User Profile */
+.forceCommunityUserProfileBody .cUserProfileCon {margin-top:0px !important; padding-top:0px !important; padding-left:0px !important; padding-right:0px !important; padding-bottom:0px !important;}
+.forceCommunityUserProfileBody .cUserProfileDetailCon.large.fullwidth {padding-bottom: 0px; padding-left: 0px; padding-right: 0px;}
