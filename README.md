@@ -20,14 +20,19 @@ This package contains:
 2. This package is **supplied as-is** and is not supported by Salesforce.
 3. No CMS or Knowledge content included.
 
-**Setup**
+**Instlattion**
 
-1. Enable and setup Experience Cloud on your site.
-2. Configure Knowledge and Salesforce CMS (as needed)
-3. Install the package - [Experience Cloud - Site Starter (AURA)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000irO6) Spring '22 v1.2
-4. Open the **Digital Experiences** app and then open the **All Sites** tab.
-5. Click **New**
-6. Select **Site Starter (AURA)**
+1. Enable and setup Experience Cloud on your site (if it is not already enabled).
+2. Install the package
+   [Experience Cloud - Site Starter (AURA)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000irO6) Spring '22 v1.2
+
+
+
+
+
+5. Open the **Digital Experiences** app and then open the **All Sites** tab.
+6. Click **New**
+7. Select **Site Starter (AURA)**
 
 6. Add the site **Name** and site **URL** (optional)
 
@@ -43,7 +48,7 @@ This package contains:
     - The site CSS is reviewed for each release, but is **supplied as-is**.
     
 3. Add to the site’s Head Markup (Experience Builder / Settings / Advanced / Edit Head Markup).
-   Copy the Head Markup from [Head-Markup.html](./Head-Markup.html) and paste it into the sites’ Head Markup.
+   Copy the Head Markup from [Head-Markup.html](./Head-Markup-Site-Starter.html) and paste it into the sites’ Head Markup.
     
 4. Allow for the use of Font Awesome icons, add ht&#8203;tp://cdnjs.cloudflare.com to **Setup** / **CSP Trusted Site Definition**, and check **Allow** for font-src and style-src.
 
