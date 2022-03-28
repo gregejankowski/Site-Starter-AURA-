@@ -40,10 +40,13 @@ This package contains:
 
 **Update an Existing Site**
 
-The package also allows for updating an existing site for theme, page templates, and CSS.
+*Warning* - This will completely overwrite the existing site (all pages and theming).
 
-1. To use the same Theme Layouts (e.g., Help Center, Search, Login Wide) as Site Starter (AURA) open your site and change the Theme Layout within Experience Builder under Settings / Theme / Change Theme. Your original theme is still available.
-2. Complete the site configuration steps
+1. Go to Workspace / Administration / Settings / Change Template.
+2. Select *Site Starter (AURA)*.
+3. Add the site *Name* and site *URL* (optional).
+4. Complete the site configuration steps.
+
 
 ## Site Configuration
 
