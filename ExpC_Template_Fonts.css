@@ -1,0 +1,71 @@
+/*  Experience Cloud Site Starter CSS - Fonts, Branding Tokens, and Buttons
+    Latest Update: 3/24/21 */
+
+/* --- Logo Left justify for the Cypress theme allows the menu to show collaped. */
+.forceCommunityThemeNavTrigger {padding: 6px !important;}
+.forceCommunityThemeHeaderCompact .themeHeaderInner.centerAlignLogo-true .themeNavTriggerContainer {flex-grow:0 !important;}
+.forceCommunityThemeHeaderCompact .themeHeaderInner.centerAlignLogo-true .themeLogo {margin-left: 6px !important;}
+.forceCommunityThemeLogo .logoImage {background-position: left !important;}
+
+/* -------------- Font, Buttons, and Breadcrumbs -------------- */
+
+/* --- BASE FONT SIZE --- */
+html {font-size: 100%;}
+/* Tablet */
+@media only screen and (max-width: 820px) {html {font-size: 90%;}}
+/* Mobile */
+@media only screen and (max-width: 480px) {html {font-size: 80%;}}
+
+/* --- FONTS - Standard font tags with SLDS equivalents. Using rem to insure site-wide consistancy */
+H1, .slds-text-heading_large, .profileName
+{font-size: 2.2rem !important; font-weight: 400 !important;}
+
+H2, .slds-text-heading_medium, .slds-card__header-title.slds-truncate 
+{font-size: 1.6rem !important; font-weight: 400 !important;}
+
+H3, .slds-text-heading_small, .slds-text-heading--small, .baseCard__header-title-container, .selfServiceArticleListItem .article-head
+{font-size: 1.3rem !important; font-weight: 400 !important;}
+
+p, .slds-text-body_regular, .siteforceThemeLayoutStarter, .slds-text-heading_x-small, .forceCommunityTopArticleItem .article-title 
+{font-size: 1.0rem !important; font-weight: 400 !important;}
+
+/* --- FONTS - Other common SLDS fonts used on the site */
+.slds-text-body_small {font-size: .9rem !important;}
+.slds-text-title {font-size: .9rem !important;}
+.slds-text-title_caps {font-size: .9rem !important;}
+.slds-text-title_bold {font-size: .9rem !important;}
+
+/* --- FONTS/LINKS - Remove all underlines from links */
+a:link, a:visited, a:hover, a:active 
+{text-decoration: none !important;}
+
+/* --- Branding tokens for Experience Cloud, see https://developer.salesforce.com/docs/atlas.en-us.communities_dev.meta/communities_dev/communities_dev_customize_tokens.htm */
+.brand-color {color: var(--colorBrand) !important;}
+.brand-text {color: var(--colorTextBrand) !important;}
+.brand-text-default {color: var(--colorTextDefault) !important;}
+.brand-text-link {color: var(--colorTextLink) !important;}
+.brand-text-weak {color: var(--colorTextWeak) !important;}
+
+/* --- Buttons and Breadcrumbs */
+/* Ask a Question  */   .askCommunityBtn,
+/* Contact Support */   .selfServiceContactSupport,
+/* Contact Support */   .contactSupportButton, 
+/* Contact Us Button */ .contactRequestButton, 
+/* Create Record Form */     .forceCommunityCreateRecordForm .button
+{border-radius:5px !important; font-size: 1rem !important; margin: auto !important; width:230px !important;}
+/* Create Record Button */
+.forceCommunityCreateRecordButton button
+{border-radius:5px !important; font-size: 1rem !important; font-weight: 400 !important; height:46px !important; text-align: center !important;}						
+
+/* Ask & Contact Us */   
+.cta_header {font-size: 1.3rem !important; font-weight: 400 !important; margin-bottom: -6px;} 
+/* @media only screen and (min-width: 48em) {.siteforceNapiliFooter .cta-btn {margin: auto !important;}} */
+
+/* Follow Button */
+.forceCommunityFollow .button {font-size: 1rem !important; width:230px !important;}    
+.forceCommunityFollow.group {justify-content:center; width:230px !important;}
+.forceCommunityFollow.group.twoButton {width: 230px !important;}
+
+/* Button (HTML) Styling */
+.button-style {font-size:1rem; height:42px; border-radius:5px; width:230px;}
+/* Mobile */ @media only screen and (max-width: 480px) {html .button-style {font-size:1rem; height:36px; border-radius:5px; width:230px;}}
