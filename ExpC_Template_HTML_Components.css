@@ -1,0 +1,48 @@
+/*  Experience Cloud Site Starter CSS - HTML Components CSS
+    Latest Update: 3/24/21 */
+
+/* -------------- CSS for HTML COMPONENTS -------------- */
+
+/* Alerts HTML */
+.custom-alerts {background-color:#ffffff; border-color:#e7e9eb; border-radius:5px; border-style: solid; border-width:1px; padding:12px;}
+.custom-builder-alerts {background-color: #808080; border-color:#e7e9eb; border-radius:5px; border-style: solid; border-width:1px; padding:12px;}
+
+/* Breadcrumbs */ 
+.breadcrumb-style {font-size:.9rem;  margin-bottom:-12px; margin-top:18px;}
+
+/* --- Footer  */
+.footer-fullwidth {background-color: #7E7E7E; padding:6px; width: 100%;} 
+.footer-maxwidth {margin: auto; max-width: 1240px; padding: 18px 0px 18px 0px;}
+.footer-text {color: #f0f0f0 !important;}
+.footer-text a:link {color: #f0f0f0; text-decoration: none;}
+.footer-spacer {color: #A9A9A9 } 
+/* Footer Desktop */
+.footer-center {text-align: center;}
+.footer-left {text-align:left;}
+.footer-right {text-align: right;}
+/* FOOTER Tablet and mobile */
+@media only screen and (max-width: 768px)
+{.footer-left {text-align: center;}
+   .footer-right {text-align: center;}
+}
+
+/* --- HTML icon styling */
+.icon-style {color: #191919 !important; padding-left:6px; padding-right:12px;}
+
+/* --- Profile Image title */
+.profile-title {justify-content: center; margin-top:-24px;}
+
+/* --- Section titles. To change the alignment, set justify-content, or change the class to section-title-center */
+.section-title {justify-content: flex-start; margin-bottom:-12px;}
+.section-title-center {justify-content: center; margin-bottom:-12px;}
+
+/* --- Tooltips */
+/* Tooltip container (Show on tablet/decktop and hide on smaller devices) */
+@media only screen and (min-width: 768px)
+{.custom-tooltip {display: inline-block; padding-left:2px; position: relative;}}
+@media only screen and (max-width: 767px)
+{.custom-tooltip {display: none;}}
+/* Tooltip text */
+.custom-tooltip .tooltiptext {bottom: 120%; left:-80%; min-width:320px; opacity: 0;  position:absolute; transition:opacity 0.3s; visibility:hidden;}
+/* Show the tooltip text when you mouse over the tooltip container */
+.custom-tooltip:hover .tooltiptext {opacity: 1; visibility: visible;}
