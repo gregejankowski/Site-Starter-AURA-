@@ -18,23 +18,21 @@ This package contains:
 **Notes:**
 1. **Read the instructions carefully** and complete the tasks before publishing. There are additional instructions and details 
 2. This package is **supplied as-is** and is not supported by Salesforce.
-3. No CMS or Knowledge content included.
+3. CSS files are included as static resources and referenced in the Head Markup. CSS can change from release to release and has the potential to visually impact other components within the Experience Cloud site. The site CSS is reviewed for each release, but is *supplied as-is*.
+4. No CMS or Knowledge content included.
 
-**Instlattion**
+**Installation**
 
 1. Enable and setup Experience Cloud on your site (if it is not already enabled).
 2. Install the package
    [Experience Cloud - Site Starter (AURA)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000irO6) Spring '22 v1.2
 
-
-
-
-
-5. Open the **Digital Experiences** app and then open the **All Sites** tab.
-6. Click **New**
-7. Select **Site Starter (AURA)**
-
-6. Add the site **Name** and site **URL** (optional)
+**Create a New Site**
+1. Open the **Digital Experiences** app and then open the **All Sites** tab.
+2. Click **New**.
+3. Select **Site Starter (AURA)**.
+4. Add the site **Name** and site **URL** (optional).
+5. Complete the configuration steps.
 
 
 ## Site Configuration
