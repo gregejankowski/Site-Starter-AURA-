@@ -152,7 +152,7 @@ background-color: white; border-color: #D4D4D4; border-style: solid; border-widt
 
 /* --- Tabs */
 .tabHeader {font-size: 1.2rem !important;}
-.forceCommunityTabset {background-color: rgba(255,255,255,0) ; min-height: 282px;}
+.forceCommunityTabset {background-color: rgba(255,255,255,0) !important; min-height: 282px;}
 .uiTabset—default .tabs__nav {border-bottom-width: 0px;}
 
 /* --- Tile Menu font size */
