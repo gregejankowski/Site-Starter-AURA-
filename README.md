@@ -80,7 +80,7 @@ The following pages have been included and updated in this theme. The theme can 
 10. *Instructions* - Builder tasks to complete before publishing your site.
 11. *Learning* - Add CSM, Trailhead, or tasks for onboarding.
 12. *Login* - Includes a new LoginWide theme layout and all loing related pages were update.
-    1. All login pages - Login, Check Password, Forgot Password, Login Error, and 
+    1. All login pages - Login, Check Password, Forgot Password, Login Error, and Register
 13. *Messages* - Flexible and improved layout.
 14. *Page Template* - Used as a starting point when creating a new page or updating an existing page to a flexible layout. 
     Note: After the page is creates, also change the page SEO title name. 
