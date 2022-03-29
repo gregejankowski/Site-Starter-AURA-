@@ -17,7 +17,7 @@ html {font-size: 100%;}
 @media only screen and (max-width: 480px) {html {font-size: 80%;}}
 
 /* --- FONTS - Standard font tags with SLDS equivalents. Using rem to insure site-wide consistancy */
-H1, .slds-text-heading_large, .profileName
+H1, .slds-text-heading_large, .profileName, .forceCommunityThemeHeroBase .contentTitle
 {font-size: 2.2rem !important; font-weight: 400 !important;}
 
 H2, .slds-text-heading_medium, .slds-card__header-title.slds-truncate 
